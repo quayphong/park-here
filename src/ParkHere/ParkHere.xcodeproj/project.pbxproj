@@ -12,9 +12,11 @@
 		8624AC721E71BF8900B92710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8624AC701E71BF8900B92710 /* Main.storyboard */; };
 		8624AC741E71BF8900B92710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8624AC731E71BF8900B92710 /* Assets.xcassets */; };
 		8624AC771E71BF8900B92710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8624AC751E71BF8900B92710 /* LaunchScreen.storyboard */; };
+		C73AAE2C38AADF0C06C0197D /* Pods_ParkHere.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA39E092F6BEA3FECD80F11E /* Pods_ParkHere.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		610D6FF33A26892FD4B380EE /* Pods-ParkHere.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkHere.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParkHere/Pods-ParkHere.release.xcconfig"; sourceTree = "<group>"; };
 		8624AC691E71BF8900B92710 /* ParkHere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkHere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8624AC6C1E71BF8900B92710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8624AC6E1E71BF8900B92710 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		8624AC731E71BF8900B92710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8624AC761E71BF8900B92710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8624AC781E71BF8900B92710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAC60DB708D51CDE4D17F2BC /* Pods-ParkHere.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkHere.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkHere/Pods-ParkHere.debug.xcconfig"; sourceTree = "<group>"; };
+		FA39E092F6BEA3FECD80F11E /* Pods_ParkHere.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkHere.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C73AAE2C38AADF0C06C0197D /* Pods_ParkHere.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33F7B2534A7AEA62584A3367 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA39E092F6BEA3FECD80F11E /* Pods_ParkHere.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8624AC601E71BF8900B92710 = {
 			isa = PBXGroup;
 			children = (
 				8624AC6B1E71BF8900B92710 /* ParkHere */,
 				8624AC6A1E71BF8900B92710 /* Products */,
+				E2E1A570E87AACD33E1F64B2 /* Pods */,
+				33F7B2534A7AEA62584A3367 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = ParkHere;
 			sourceTree = "<group>";
 		};
+		E2E1A570E87AACD33E1F64B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BAC60DB708D51CDE4D17F2BC /* Pods-ParkHere.debug.xcconfig */,
+				610D6FF33A26892FD4B380EE /* Pods-ParkHere.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8624AC7B1E71BF8900B92710 /* Build configuration list for PBXNativeTarget "ParkHere" */;
 			buildPhases = (
+				0935A9AF781F52DED1AED71A /* [CP] Check Pods Manifest.lock */,
 				8624AC651E71BF8900B92710 /* Sources */,
 				8624AC661E71BF8900B92710 /* Frameworks */,
 				8624AC671E71BF8900B92710 /* Resources */,
+				C0E1A32945430BD34EA0B96E /* [CP] Embed Pods Frameworks */,
+				B593F10E40F69F7C788AB5C8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0935A9AF781F52DED1AED71A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B593F10E40F69F7C788AB5C8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkHere/Pods-ParkHere-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0E1A32945430BD34EA0B96E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkHere/Pods-ParkHere-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8624AC651E71BF8900B92710 /* Sources */ = {
@@ -257,6 +332,7 @@
 		};
 		8624AC7C1E71BF8900B92710 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAC60DB708D51CDE4D17F2BC /* Pods-ParkHere.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V7Z27TG6NM;
@@ -270,6 +346,7 @@
 		};
 		8624AC7D1E71BF8900B92710 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 610D6FF33A26892FD4B380EE /* Pods-ParkHere.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V7Z27TG6NM;
