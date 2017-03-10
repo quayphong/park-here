@@ -6,5 +6,6 @@ target 'ParkHere' do
   use_frameworks!
 
   # Pods for ParkHere
+  pod 'Firebase/Core'
 
 end
