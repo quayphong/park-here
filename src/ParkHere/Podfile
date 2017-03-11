@@ -8,5 +8,6 @@ target 'ParkHere' do
   # Pods for ParkHere
   pod 'Firebase/Core'
   pod 'AFNetworking', '~> 3.0'
+  pod 'Firebase/Database'
 
 end
